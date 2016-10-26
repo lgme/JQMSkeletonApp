@@ -6,11 +6,9 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.min.css">
-        <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="lib/jqm/jquery.mobile.min.js"></script>
-        <script type="text/javascript" src="lib/jqm/jquery-ui.min.js"></script>
 
         <title>JQM Skeleton App</title>
     </head>
@@ -23,6 +21,12 @@
 
             <div role="main" class="ui-content">
                 <p>Page one content goes here.</p>
+
+                <div data-role="fieldcontain">
+                    <label for="slider-0">Input slider:</label>
+                    <input type="range" name="slider" id="slider-0" value="60" min="0" max="100" />
+                </div>
+
                 <a href="#page-two" class="ui-btn" data-transition="slide">Go to page two</a>
             </div>
 
@@ -46,7 +50,6 @@
                 <h4>Page two footer</h4>
             </div>
         </div><!-- /page-two -->
-
         <script type="text/javascript" src="cordova.js"></script>
     </body>
 </html>
